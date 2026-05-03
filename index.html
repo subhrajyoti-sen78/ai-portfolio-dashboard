@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Portfolio Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="profile-section">
+                <img src="profile.png" alt="Profile Avatar" class="profile-img">
+                <div class="profile-icons">
+                    <i class="fas fa-cog"></i>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+            
+            <div class="search-container">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search capabilities...">
+                </div>
+            </div>
+
+            <nav class="nav-menu">
+                <div class="nav-label">BROWSE</div>
+                <a href="#" class="nav-item active">
+                    <i class="fas fa-copy"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Overall insight</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-check"></i>
+                    <span>Tasks</span>
+                </a>
+
+                <div class="nav-label">MORE</div>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-sliders-h"></i>
+                    <span>Tutorials</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-clipboard-list"></i>
+                    <span>FAQ</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-user"></i>
+                    <span>Support</span>
+                </a>
+            </nav>
+
+            <div class="beta-notice">
+                <h4>We are in beta</h4>
+                <p>You are currently using a beta version of this AI portfolio. Some features can't work properly sometimes. We encourage you to send us your feedback.</p>
+                <button class="feedback-btn">send your feedback</button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-header">
+                <div class="logo-container">
+                    <h1 class="logo-text">Dashboard</h1>
+                    <div class="logo-icon"><i class="fab fa-facebook-square"></i></div>
+                </div>
+                <div class="header-actions">
+                    <div class="header-tab active">Overview</div>
+                    <div class="header-tab">AI Models</div>
+                    <div class="header-tab">Analytics</div>
+                </div>
+            </header>
+
+            <div class="dashboard-grid">
+                
+                <!-- Main Feature Card 1 -->
+                <div class="card feature-card">
+                    <h2 class="card-title">Generative Vision Models</h2>
+                    <div class="card-subtitle">
+                        <span>Ad campaign</span>
+                    </div>
+                    
+                    <div class="chart-container">
+                        <div class="bar-chart">
+                            <div class="bar bar-blue" style="height: 40%"></div>
+                            <div class="bar bar-lightgreen" style="height: 60%"></div>
+                            <div class="bar bar-green" style="height: 80%"></div>
+                            <div class="bar bar-blue" style="height: 30%"></div>
+                            <div class="bar bar-lightgreen" style="height: 90%"></div>
+                            <div class="bar bar-green" style="height: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KPI Card -->
+                <div class="card kpi-card">
+                    <div class="kpi-header">
+                        <span class="kpi-label">BEST PERFORMANCE</span>
+                        <h3 class="kpi-title">CREATIVE 1</h3>
+                    </div>
+                    <div class="kpi-stats">
+                        <div class="stat">
+                            <span class="stat-label">KPI 1</span>
+                            <span class="stat-value">1,050</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">KPI 2</span>
+                            <span class="stat-value">842</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Feature Card 2 -->
+                <div class="card feature-card">
+                     <h2 class="card-title">NLP Transformers</h2>
+                     <div class="card-subtitle">
+                        <span>Ad campaign</span>
+                    </div>
+                    <div class="chart-container">
+                        <div class="bar-chart">
+                            <div class="bar bar-blue" style="height: 20%"></div>
+                            <div class="bar bar-green" style="height: 50%"></div>
+                            <div class="bar bar-lightgreen" style="height: 75%"></div>
+                            <div class="bar bar-blue" style="height: 40%"></div>
+                            <div class="bar bar-green" style="height: 85%"></div>
+                            <div class="bar bar-lightgreen" style="height: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Info Card -->
+                <div class="card info-card">
+                    <div class="info-content-wrapper">
+                        <div class="info-circle">
+                            <span>1</span>
+                        </div>
+                        <div class="info-content">
+                            <h4>Adv 1</h4>
+                            <p class="status-running">running</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ad Card -->
+                <div class="card ad-card">
+                    <div class="ad-content">
+                        <div class="ad-image-container">
+                            <img src="profile.png" alt="Profile" class="ad-img">
+                            <span class="ad-overlay-text">AI.Dev</span>
+                        </div>
+                        <div class="ad-text">
+                            <h4>Retargeting on AI Networks?</h4>
+                            <p>Reconnect with your website audience with Advanced Exchange advertising.</p>
+                            <span class="ad-meta">9,329 people like this.</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+</body>
+</html>
